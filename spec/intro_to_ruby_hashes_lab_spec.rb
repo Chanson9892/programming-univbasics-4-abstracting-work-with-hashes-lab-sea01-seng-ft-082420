@@ -4,8 +4,8 @@ describe "working with hashes" do
   describe "instantiating" do
     describe "my_hash_creator" do
       it "accepts a key and a value as parameters and returns a hash with this key/value pair inside" do
-        expect(my_hash_creator(:key, 'Grace Hopper')).to be_a(Hash)
-        expect(my_hash_creator(:key, 'Grace Hopper')).to eq({key: 'Grace Hopper'})
+        expect(my_hash_creator(:name, 'Grace Hopper')).to be_a(Hash)
+        expect(my_hash_creator(:name, 'Grace Hopper')).to eq({name: 'Grace Hopper'})
 
         expect(my_hash_creator(1, 2)).to eq({1 => 2})
       end
